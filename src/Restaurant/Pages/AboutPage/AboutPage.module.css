@@ -3,7 +3,7 @@
 .FirstDiv {
     margin-top: 20px;
     height: 60vh;
-    background-image: url('/Images/Wall.jpg');
+    background-image: url('/src/Images/Wall.jpg');
     background-size: 100% 100%;
 }
 

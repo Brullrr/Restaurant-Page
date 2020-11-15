@@ -9,7 +9,7 @@ const confirmationPage = () => {
                 <p><strong>Thank you!</strong></p>
                 <p>Your reservation has successfully been booked.</p>
                 <p>A confirmation notice has been sent to your email.</p>
-                <img src='/Images/Panda.jpg' alt='panda'></img>
+                <img src='./Images/Panda.jpg' alt='panda'></img>
             </div>
             
             <Footer />

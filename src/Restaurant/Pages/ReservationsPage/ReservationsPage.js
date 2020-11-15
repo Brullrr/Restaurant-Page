@@ -207,7 +207,7 @@ const ReservationsPage = () => {
         
         <div className={classes.ReservationsPage}>
             <div className={classes.Title}>&#8492;&#8500;&#8500;&#120000; &#119990; &#8475;&#8495;&#120008;&#8495;&#120007;&#120011;&#119990;&#120009;&#119998;&#8500;&#120003;</div>
-            <img className={classes.Image} src='/Images/Table.jpg' alt='table'></img>
+            <img className={classes.Image} src='./Images/Table.jpg' alt='table'></img>
             
             <div className={classes.InputForm}>
 
