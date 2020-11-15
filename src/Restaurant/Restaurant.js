@@ -10,14 +10,14 @@ import AboutPage from './Pages/AboutPage/AboutPage'
 import ReservationsPage from './Pages/ReservationsPage/ReservationsPage';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import ConfirmationPage from './Pages/ReservationsPage/ConfirmationPage/ConfirmationPage';
-// import nothing from '../../build/Images/'
+//import nothing from '../Images/'
 class Restaurant extends Component {
     state = {
-        sliderArray: [  {image: './Images/Lantern.jpg', key: 0, filledColor: true },
-                        {image: './Images/Dumplings.jpg', key: 1, filledColor: false },
-                        {image: './Images/Soup.jpg', key: 2, filledColor: false },
-                        {image: './Images/CaramelDessert.jpg', key: 3, filledColor: false },
-                        {image: './Images/GreenTeaCake.jpg', key: 4, filledColor: false },
+        sliderArray: [  {image: '../Images/Lantern.jpg', key: 0, filledColor: true },
+                        {image: '../../Images/Dumplings.jpg', key: 1, filledColor: false },
+                        {image: '../../public/Images/Soup.jpg', key: 2, filledColor: false },
+                        {image: '../../build/Images/CaramelDessert.jpg', key: 3, filledColor: false },
+                        {image: '/Images/GreenTeaCake.jpg', key: 4, filledColor: false },
                         {image: './Images/Wall.jpg', key: 5, filledColor: false }],
         currentSlideNumber: 0,
         automaticSliderOn: true,
