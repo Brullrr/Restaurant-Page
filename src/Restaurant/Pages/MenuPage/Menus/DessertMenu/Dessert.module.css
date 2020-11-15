@@ -1,0 +1,113 @@
+.DessertMenu {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    padding: 0px 3%;
+}
+
+.DessertPicture {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.DessertImage {
+    height: 100%;
+    width: 100%;
+    transform-origin: 50% 60%;
+    transition: transform 5s, filter 3s ease-in-out;
+    filter: brightness(150%);
+    z-index: -1;
+}
+
+
+.Overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: black;
+    opacity: 0;
+    z-index: 1;
+}
+
+.DessertPicture:hover .Overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.DessertPicture:hover .DessertImage {
+    filter: brightness(100%);
+    transform: scale(1.5);
+
+    
+}
+
+.Description {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    word-wrap: break-word;
+    break-after: auto;
+    font-size: 14px;
+
+}
+.InnerButton {
+    position: absolute;
+    top: 125px;
+    left: 125px;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    color: white;
+    opacity: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.DessertPicture:hover .InnerButton {
+    position: absolute;
+    top: 125px;
+    left: 125px;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    z-index: 3;
+    transition: 0.3s ease-in-out;
+    transform: scale(1.3);
+    font-size: 20px;
+}
+
+.DessertTitle {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.ViewMenuButton {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 900;
+    background-color: white;
+    border: none;
+}
+.ViewMenuButton:hover {
+    color: rgb(104, 20, 121);
+}
+
+
+

@@ -1,0 +1,88 @@
+
+
+.FirstDiv {
+    margin-top: 20px;
+    height: 60vh;
+    background-image: url('/Images/Wall.jpg');
+    background-size: 100% 100%;
+}
+
+.FirstDivWords {
+    position: absolute;
+    font-size: 50px; 
+    top: 40%;
+    left: 5%;
+}
+.FirstDivWordsTwo {
+    position: absolute;
+    right: 10%;
+    font-size: 50px; 
+    top: 40%;
+}
+
+.Divider {
+    height: 10vh;
+
+}
+
+.SecondDiv {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    min-height: 200px;
+}
+.ImageOne {
+    height: 220px;
+    width: 220px;
+    margin: 0px 0px 0px 20%;
+}
+
+.SecondDivWords {
+    position: absolute;
+    text-align: center;
+    width: 290px;
+    vertical-align: top;
+    margin: 0px 0px 0px 0px;
+    right: 20%;
+}
+.SecondDivTitle {
+    font-size: 25px;
+    font-weight: bold;
+}
+.SecondDivDescription {
+    display: inline-block;
+    font-size: 15px;
+}
+
+
+
+.ThirdDiv {
+    display: flex;
+    height: 40vh;
+    width: 100%;
+    min-height: 200px;
+}
+.ImageTwo {
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    margin: 0px 0px 0px 0px;
+    right: 23%;
+}
+
+.ThirdDivWords {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    vertical-align: top;
+    margin: 20px 0px 0px 0px;
+    left: 20%;
+}
+.ThirdDivTitle {
+    font-size: 25px;
+    font-weight: bold;
+}
+.ThirdDivDescription {
+    display: inline-block;
+    font-size: 15px;
+}

@@ -1,0 +1,22 @@
+.Footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.FooterWrap {
+    position: absolute;
+    display: flex;
+    right: 5%;
+}
+
+.Bottom {
+    position: relative;
+    margin-top: 160px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(49, 48, 48);
+    text-align: right;
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+}

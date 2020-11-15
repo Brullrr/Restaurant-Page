@@ -1,0 +1,7 @@
+.ReviewBanner {
+    text-align: center;
+    font-size: 30px;
+    height: 10vh;
+    border-bottom: 1px solid black;
+    line-height: 10vh;
+}

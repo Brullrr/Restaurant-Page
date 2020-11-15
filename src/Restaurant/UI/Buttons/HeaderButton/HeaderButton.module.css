@@ -1,0 +1,118 @@
+/* .HeaderButton {
+    height: 50px;
+    width: 200px;
+    border: none;
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+    cursor: pointer;
+    background-color: white;
+    position: relative;
+    z-index: 0;
+    border-bottom: 2px solid rgb(104, 20, 121);
+}
+.HeaderButton:hover {
+    transition: 0s;
+    color: rgb(104, 20, 121);
+    background: #fff;
+}
+
+.HeaderButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+  }
+
+
+
+.HeaderButton::before {
+    height: 52px;
+    width: 200px;
+}
+  
+.HeaderButton::after {
+    height: 52px;
+    width: 200px;
+    
+}
+
+.HeaderButton::before, .HeaderButton::after {
+    position: absolute;
+    background: white;
+    z-index: -1;
+    transition: 0.3s;
+    content: '';
+  }
+  
+.HeaderButton:hover::before {
+    width: 0px;
+    background: #fff;
+}
+  
+.HeaderButton:hover::after {
+    height: 0px;
+    background: #fff;
+} */
+  
+.HeaderButton{
+      display:block;
+      float:left;
+      position:relative;
+      width:118px;
+      height:100px;
+      text-align:center;
+      border: none;
+      background-color: white;
+      font-weight: 900;
+      
+}
+
+/* this controls left and right somehow */
+.HeaderButton::before {
+        transition: all 0.4s;  
+        position:absolute;
+        content:"";
+        width:99%;
+        height:0%;
+        left:50%;
+        margin-left:-50%;
+        top:50%;
+        border-color:rgb(104, 20, 121);
+        border-style:solid;
+        border-width:0 1px;
+        border-left: none;
+        border-right: none;
+}
+      /* this controls top and bottom somehow */
+.HeaderButton::after{
+        transition: all 0.4s;  
+        position:absolute;
+        content:"";
+        width: 0px;
+        height:100%;
+        left:50%;
+        margin-left: 0%;
+        top: 0%;
+        border-color:rgb(104, 20, 121);
+        border-style:solid;
+        border-width:2px 0;
+        border-top: none;
+}
+      
+.HeaderButton:hover{
+    cursor: pointer;
+    color:rgb(104, 20, 121);
+    transition: 0.2s;
+    }   
+        
+.HeaderButton:hover:after{
+    width:124px;
+    margin-left:-50%;
+    border-color:rgb(104, 20, 121);
+}
+        
+.HeaderButton:hover:before{
+    height:100px;
+    top:0%;
+    border-color:rgb(104, 20, 121);
+}

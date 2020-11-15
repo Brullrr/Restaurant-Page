@@ -1,0 +1,13 @@
+.Desserts {
+    text-align: center;
+    font-size: 10vh;
+    font-weight: bold;
+}
+
+
+.Divider {
+    margin-left: 20%;    
+    width: 60%;
+    height: 1px;
+    border-bottom: 2px dotted black;
+}

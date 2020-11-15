@@ -1,0 +1,33 @@
+.ContactPage {
+    text-align: center;
+    font-size: 5vh;
+    padding: 100px 0px 100px 0px;
+}
+
+
+
+.OperatingHoursOne {
+    text-decoration: underline;
+}
+
+.ContactInformation {
+    text-align: center;
+    display: inline-block;
+    padding: 15px;
+    background-color: rgb(236, 227, 227);
+    border: 2px dashed rgb(53, 9, 53);
+    margin-top: 10px;
+    color: rgb(53, 9, 53);
+    height: 50vh;
+    vertical-align: top;
+    margin-right: 10px;
+}
+.ContactInformation:hover {
+    background-color: #ccc;
+    color: rgb(80, 15, 80);
+    border-color: rgb(80, 15, 80);
+}
+
+.ContactInformationOne {
+    text-decoration: underline;
+}
