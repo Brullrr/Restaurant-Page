@@ -4,7 +4,6 @@ import Footer from '../../Containers/Footer/Footer';
 import Input from '../../Assests/Input/Input';
 import classes from './ReservationsPage.module.css';
 import { Link } from 'react-router-dom';
-import input from '../../Assests/Input/Input';
 
 
 const ReservationsPage = () => {

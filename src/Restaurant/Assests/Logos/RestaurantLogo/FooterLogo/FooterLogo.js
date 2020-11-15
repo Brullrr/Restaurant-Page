@@ -3,7 +3,7 @@ import classes from './FooterLogo.module.css';
 
 const footerlogo = () => {
     return (
-        <div className={classes.Logo} ></div>
+        <img src="./Images/logo-before.PNG" className={classes.Logo}></img>
     )
 }
 
