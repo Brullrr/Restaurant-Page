@@ -64,6 +64,7 @@
       border: none;
       background-color: white;
       font-weight: 900;
+      outline: none;
       
 }
 
@@ -115,4 +116,86 @@
     height:100px;
     top:0%;
     border-color:rgb(104, 20, 121);
+}
+
+
+
+
+
+
+
+
+
+
+@media ( max-width: 880px) {
+
+    .HeaderButton{
+        display: initial;
+        position: absolute;
+        float: none;
+        width:100px;
+        height:20px;
+        text-align:center;
+        border: none;
+        background-color: white;
+        font-weight: 100;
+        outline: none;
+        right: 0%;
+        font-size: 18px;
+        
+  }
+  
+  /* this controls left and right somehow */
+  .HeaderButton::before {
+          transition: none;  
+          position: absolute;
+          content:"";
+          width: 100px;
+          height: 20px;
+          left: 0%;
+          margin-left: 0%;
+          top: 0%;
+          border-color:white;
+          border-style: solid;
+          border-width: 1px;
+          border-left: none;
+          border-right: none;
+          outline: none;
+  }
+        /* this controls top and bottom somehow */
+  .HeaderButton::after{
+            transition: none;  
+            position: absolute;
+            content:"";
+            width: 100px;
+            height: 20px;
+            left: 0%;
+            margin-left: 0%;
+            top: 0%;
+            border-color:purple;
+            border-style: solid;
+            border-width: 1px;
+            border-left: none;
+            border-right: none;
+            outline: none;
+  }
+        
+  .HeaderButton:hover{
+      cursor: pointer;
+      color: black;
+      transition: 0.2s;
+      }   
+          
+  .HeaderButton:hover:after{
+      width: 100px;
+      margin-left: 0%;
+      border-color: black;
+  }
+          
+  .HeaderButton:hover:before{
+      height:20px;
+      top: 0%;
+      border-color:black;
+  }
+
 }

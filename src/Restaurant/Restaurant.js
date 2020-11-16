@@ -13,15 +13,16 @@ import ConfirmationPage from './Pages/ReservationsPage/ConfirmationPage/Confirma
 
 class Restaurant extends Component {
     state = {
-        sliderArray: [  {image: './Images/Lantern.jpg', key: 0, filledColor: true },
-                        {image: './Images/Dumplings.jpg', key: 1, filledColor: false },
-                        {image: './Images/Soup.jpg', key: 2, filledColor: false },
-                        {image: './Images/CaramelDessert.jpg', key: 3, filledColor: false },
-                        {image: './Images/GreenTeaCake.jpg', key: 4, filledColor: false },
-                        {image: './Images/Wall.jpg', key: 5, filledColor: false }],
+        sliderArray: [  {image: process.env.PUBLIC_URL + '/Images/Lantern.jpg', key: 0, filledColor: true },
+                        {image: process.env.PUBLIC_URL + '/Images/Dumplings.jpg', key: 1, filledColor: false },
+                        {image: process.env.PUBLIC_URL + '/Images/Soup.jpg', key: 2, filledColor: false },
+                        {image: process.env.PUBLIC_URL + '/Images/CaramelDessert.jpg', key: 3, filledColor: false },
+                        {image: process.env.PUBLIC_URL + '/Images/GreenTeaCake.jpg', key: 4, filledColor: false },
+                        {image: process.env.PUBLIC_URL + '/Images/Wall.jpg', key: 5, filledColor: false }],
         currentSlideNumber: 0,
         automaticSliderOn: true,
-        reviewNumber: 0
+        reviewNumber: 0,
+        isMobile: window.matchMedia("(max-width: 880px)").matches
     }
 
     
@@ -110,7 +111,7 @@ class Restaurant extends Component {
                     <Route path="/menu/food" exact render={ () => <FoodPage />} />  
                     <Route path="/menu/drinks" exact render={ () => <DrinkPage />} />  
                     <Route path="/menu/desserts" exact render={ () => <DessertPage />} />  
-                    <Route path="/about" exact render={ () => <AboutPage />} />  
+                    <Route path="/about" exact render={ () => <AboutPage IsMobile={this.state.isMobile} />} />  
                     <Route path="/reservations" exact render={ () => <ReservationsPage />} />
                     <Route path="/contact" exact render={ () => <ContactPage />} />  
                     <Route path='/reservations/confirmation' exact render={ () =><ConfirmationPage /> }></Route>

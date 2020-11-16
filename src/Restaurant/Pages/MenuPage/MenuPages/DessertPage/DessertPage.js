@@ -14,28 +14,28 @@ import classes from './DessertPage.module.css';
 
 
                 <MenuItem 
-                    Image='./Images/Brownie.jpg'
+                    Image={process.env.PUBLIC_URL + '/Images/Brownie.jpg'}
                     MenuItemName='Oriental Brownie'
                     Description='This brownie come topped with an explosion of hot chocoloate sauce that would rival the eruption of Mount Fuji. It is not all sweet hot chocolate. The brownie is centered around our ice cream created from home-grown vanilla beans.'
                     Price='5.00'
                 />
                 <div class={classes.Divider}></div>
                 <MenuItem 
-                    Image='./Images/CaramelDessert.jpg'
+                    Image={process.env.PUBLIC_URL + '/Images/CaramelDessert.jpg'}
                     MenuItemName='Caramel Cake'
                     Description='Rich Eurasian style cake lathered with a caramel sauce. This multi-layered tower of bliss can come stacked at any height. Our cake is set at a standard 3 layers, but feel free to order more on top.'
                     Price='6.75'
                 />
                 <div class={classes.Divider}></div>
                 <MenuItem 
-                    Image='./Images/Dragon Fruit.jpg'
+                    Image={process.env.PUBLIC_URL + '/Images/Dragon Fruit.jpg'}
                     MenuItemName='Dragon Tongue'
                     Description='The exotic asian fruit known as dragon fruit is a much try. Here we have incoporated it into our cake and ice cream mix to give a taste that can only be described as the tongue of a dragon.'
                     Price='7.00'
                 />
                  <div class={classes.Divider}></div>
                 <MenuItem 
-                    Image='./Images/GreenTeaCake.jpg'
+                    Image={process.env.PUBLIC_URL + '/Images/GreenTeaCake.jpg'}
                     MenuItemName='Matcha Cake'
                     Description='Straight from the city of Kyoto in Japan, this cake features the taste of the most traditional tea in Japan.' 
                     Price='9.00'

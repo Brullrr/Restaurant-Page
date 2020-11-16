@@ -3,7 +3,7 @@ import classes from './FooterLogo.module.css';
 
 const footerlogo = () => {
     return (
-        <img src="./Images/logo-before.PNG" className={classes.Logo}></img>
+        <img src={process.env.PUBLIC_URL + '/Images/logo-before.PNG'} className={classes.Logo}></img>
     )
 }
 

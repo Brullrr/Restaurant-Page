@@ -9,7 +9,7 @@ const foodMenu = () => {
         <div className={classes.FoodPicture}>
             <div className={classes.Overlay}></div>
             <Link to='/menu/food'><button className={classes.InnerButton}> {'>'} </button></Link>
-            <img className={classes.FoodImage} src='./Images/Fish.jpg' alt="food"></img>
+            <img className={classes.FoodImage} src={process.env.PUBLIC_URL + '/Images/Fish.jpg'} alt="food"></img>
             
         </div>
         <p className={classes.Description}>Some of the most traditional eastern foods accented beautifully with a vareity of delicous american toppings.</p>
