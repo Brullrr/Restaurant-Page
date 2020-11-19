@@ -4,9 +4,17 @@ import classes from './HeaderButton.module.css'
 const headerButton = (props) => {
     
     let message = props.Label
-    let marginStyled = {marginTop: props.MarginTop}
+    let marginStyled
 
-    console.log(props.IsMobile)
+    console.log("Header Button:   " + props.IsMobile)
+
+
+    if(props.IsMobile) {
+        marginStyled = {marginTop: props.MarginTop}
+        
+    } else {
+        marginStyled = {marginTop: '0px'}
+    }
 
 
     return (

@@ -5,8 +5,16 @@ import Footer from '../../Containers/Footer/Footer';
 
 
 const aboutPage = (props) => {
+    
+    const mql = window.matchMedia('(max-width: 880px)')
+    mql.addEventListener('change', (e) => {
+        const mobileView = e.matches;
+        props.Resize(mobileView)
+    })
+
     return <Fragment>
-        <Header IsMobile={props.IsMobile}/>
+        <Header 
+            IsMobile={props.IsMobile}/>
         <div className={classes.AboutPage}>
             <div className={classes.FirstDiv}><p className={classes.FirstDivWords}>&#119978;&#120010;&#120007;</p><p className={classes.FirstDivWordsTwo}>&#8459;&#119998;&#120008;&#120009;&#8500;&#120007;&#120014;</p></div>
             <div className={classes.Divider}></div>

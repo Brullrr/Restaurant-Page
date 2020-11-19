@@ -4,13 +4,17 @@ import Footer from '../../Containers/Footer/Footer';
 import classes from './ContactPage.module.css';
 
 
-const contactPage = () => {
-
+const contactPage = (props) => {
+    const mql = window.matchMedia('(max-width: 880px)')
+    mql.addEventListener('change', (e) => {
+        const mobileView = e.matches;
+        props.Resize(mobileView)
+    })
     
 
 
     return (<Fragment>
-        <Header />
+        <Header IsMobile={props.IsMobile}/>
         
         <div className={classes.ContactPage}>
             <div className={classes.ContactInformation}>

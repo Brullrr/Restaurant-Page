@@ -8,7 +8,10 @@ const header = (props) => {
     return (
         <Fragment>
             <div className={classes.Header}>
-                <Link to='/menu'><HeaderButton IsMobile={props.IsMobile} MarginTop='0px ' Label='Menu'/></Link>
+                <Link to='/menu'><HeaderButton 
+                    IsMobile={props.IsMobile} 
+                    MarginTop='0px ' 
+                    Label='Menu'/></Link>
                 <Link to='/about'><HeaderButton IsMobile={props.IsMobile} MarginTop='30px ' Label='About Us'/></Link>
                 <Link to='/'><RestaurantLogo /></Link>
                 <Link to='/reservations'><HeaderButton IsMobile={props.IsMobile} MarginTop='60px ' Label='Reservations'/></Link>

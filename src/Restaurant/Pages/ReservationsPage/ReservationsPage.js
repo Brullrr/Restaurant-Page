@@ -6,7 +6,12 @@ import classes from './ReservationsPage.module.css';
 import { Link } from 'react-router-dom';
 
 
-const ReservationsPage = () => {
+const ReservationsPage = (props) => {
+    const mql = window.matchMedia('(max-width: 880px)')
+    mql.addEventListener('change', (e) => {
+        const mobileView = e.matches;
+        props.Resize(mobileView)
+    })
 
     let d = new Date();
     let currentDate = d.getFullYear().toString() + '-' + (d.getMonth() + 1).toString() + '-' + (d.getDate() + 1).toString()
@@ -203,7 +208,7 @@ const ReservationsPage = () => {
     console.log(orderFormState.formIsValid)
 
     return (<Fragment>
-        <Header />
+        <Header IsMobile={props.IsMobile}/>
         
         <div className={classes.ReservationsPage}>
             <div className={classes.Title}>&#8492;&#8500;&#8500;&#120000; &#119990; &#8475;&#8495;&#120008;&#8495;&#120007;&#120011;&#119990;&#120009;&#119998;&#8500;&#120003;</div>

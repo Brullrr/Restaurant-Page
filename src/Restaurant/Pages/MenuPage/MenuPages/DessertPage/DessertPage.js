@@ -6,10 +6,15 @@ import classes from './DessertPage.module.css';
 
 
 
- const dessertPage = () => {
+ const dessertPage = (props) => {
+    const mql = window.matchMedia('(max-width: 880px)')
+    mql.addEventListener('change', (e) => {
+        const mobileView = e.matches;
+        props.Resize(mobileView)
+    })
      return (
          <Fragment>
-             <Header />
+             <Header IsMobile={props.IsMobile}/>
                 <p className={classes.Desserts}>&#8230;&#8230;&#8230;&#8230;&#119967;&#8495;&#120008;&#120008;&#8495;&#120007;&#120009;&#120008;&#8230;&#8230;&#8230;&#8230;</p>
 
 

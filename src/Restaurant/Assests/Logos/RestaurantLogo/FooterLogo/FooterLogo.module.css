@@ -11,3 +11,19 @@
     transition: all ease 1s;
 }
 
+@media ( max-width: 880px) { 
+    .Logo {
+        display: none;
+        position: absolute;
+        height: 175px;
+        width: 275px;
+        background-size: 100% 100%;
+        transition: all 1s;
+        left: 0%;
+    }
+    .Logo:hover {
+        cursor: pointer;
+        transition: all ease 1s;
+    }
+
+}

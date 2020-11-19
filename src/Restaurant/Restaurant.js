@@ -22,9 +22,10 @@ class Restaurant extends Component {
         currentSlideNumber: 0,
         automaticSliderOn: true,
         reviewNumber: 0,
-        isMobile: window.matchMedia("(max-width: 880px)").matches
+        isMobile: false
     }
 
+    
     
     
 
@@ -90,9 +91,23 @@ class Restaurant extends Component {
             sliderArray: copiedSliderArray
             })
     };
-
+    resizeHandler = (mobileView) => {
+        console.log("The site is in mobile version")
+        if(mobileView) {
+            this.setState({
+                isMobile: true
+            })
+        } else {
+            this.setState({
+                isMobile: false
+            })
+        }
+    }
     
     render() {
+        
+
+        
         
         return (
             <Fragment>
@@ -105,16 +120,18 @@ class Restaurant extends Component {
                         AutomaticSlider = {this.automaticSlideChanger}
                         Clicked= { this.changeSlideHandler}
                         TurnSliderOff = {this.turnSliderOffHandler}
-                        ReviewNumber={this.state.reviewNumber}/> 
+                        ReviewNumber={this.state.reviewNumber}
+                        IsMobile={this.state.isMobile} 
+                        Resize={(e) => {this.resizeHandler(e)}}/> 
                     } />
-                    <Route path="/menu" exact render={ () => <MenuPage />} />
-                    <Route path="/menu/food" exact render={ () => <FoodPage />} />  
-                    <Route path="/menu/drinks" exact render={ () => <DrinkPage />} />  
-                    <Route path="/menu/desserts" exact render={ () => <DessertPage />} />  
-                    <Route path="/about" exact render={ () => <AboutPage IsMobile={this.state.isMobile} />} />  
-                    <Route path="/reservations" exact render={ () => <ReservationsPage />} />
-                    <Route path="/contact" exact render={ () => <ContactPage />} />  
-                    <Route path='/reservations/confirmation' exact render={ () =><ConfirmationPage /> }></Route>
+                    <Route path="/menu" exact render={ () => <MenuPage IsMobile={this.state.isMobile} Resize={(e) => {this.resizeHandler(e)}}/>} />
+                    <Route path="/menu/food" exact render={ () => <FoodPage IsMobile={this.state.isMobile} Resize={(e) => {this.resizeHandler(e)}}/>} />  
+                    <Route path="/menu/drinks" exact render={ () => <DrinkPage IsMobile={this.state.isMobile} Resize={(e) => {this.resizeHandler(e)}}/>} />  
+                    <Route path="/menu/desserts" exact render={ () => <DessertPage IsMobile={this.state.isMobile} Resize={(e) => {this.resizeHandler(e)}}/>} />  
+                    <Route path="/about" exact render={ () => <AboutPage IsMobile={this.state.isMobile} Resize={(e) => {this.resizeHandler(e)}}/>} />  
+                    <Route path="/reservations" exact render={ () => <ReservationsPage IsMobile={this.state.isMobile} Resize={(e) => {this.resizeHandler(e)}}/>} />
+                    <Route path="/contact" exact render={ () => <ContactPage IsMobile={this.state.isMobile} Resize={(e) => {this.resizeHandler(e)}}/>} />  
+                    <Route path='/reservations/confirmation' exact render={ () =><ConfirmationPage IsMobile={this.state.isMobile} Resize={(e) => {this.resizeHandler(e)}}/> }></Route>
                          
                 </div>
                 

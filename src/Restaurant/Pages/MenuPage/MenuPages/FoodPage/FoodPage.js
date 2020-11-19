@@ -4,11 +4,16 @@ import Footer from '../../../../Containers/Footer/Footer';
 import MenuItem from '../../../../Containers/MenuItem/MenuItem';
 import classes from './FoodPage.module.css';
 
-const foodPage = () => {
+const foodPage = (props) => {
+    const mql = window.matchMedia('(max-width: 880px)')
+    mql.addEventListener('change', (e) => {
+        const mobileView = e.matches;
+        props.Resize(mobileView)
+    })
     return (
         <Fragment>
             
-            <Header />
+            <Header IsMobile={props.IsMobile} />
             <p className={classes.Appetizers} >&#8230;&#8230;&#8230;&#8230;&#119964;&#120005;&#120005;&#8495;&#120009;&#119998;&#120015;&#8495;&#120007;&#120008;&#8230;&#8230;&#8230;&#8230;</p>
             <MenuItem   Image={process.env.PUBLIC_URL + '/Images/Dumplings.jpg'}
                         MenuItemName='Jiaozi' 
