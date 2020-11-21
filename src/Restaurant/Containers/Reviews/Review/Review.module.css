@@ -122,7 +122,31 @@
         padding: 0px 50px 0px 50px;
         border-radius: 50%;
     }
-
-
 } 
 
+
+
+@media ( max-width: 400px) {
+    .Review {
+        width: 100%;
+        height: 50vh;
+        display: grid;
+        grid-template-columns: 150px 200px; 
+    }
+
+    .ImageHolder p {
+        margin: 10px 0px 10px 0px;
+    }
+    
+    
+    .Paragraph {
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        font-style: italic;
+        font-size: 15px;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+
+}

@@ -180,3 +180,25 @@
     }
 
 }
+
+@media ( max-width: 400px) { 
+
+    .SecondDivWords {
+        
+        position: absolute;
+        text-align: center;
+        width: 290px;
+        vertical-align: top;
+        margin: 0px 0px 0px 0px;
+         left: 15%;
+    }    
+
+    .ThirdDivWords {
+        position: initial;
+        text-align: center;
+        width: 290px;
+        vertical-align: top;
+        margin: 0px 0px 0px 15%;
+        right: 0%;
+    }
+}
