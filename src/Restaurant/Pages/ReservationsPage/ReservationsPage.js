@@ -7,12 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 const ReservationsPage = (props) => {
-    const mql = window.matchMedia('(max-width: 880px)')
-    mql.addEventListener('change', (e) => {
-        const mobileView = e.matches;
-        props.Resize(mobileView)
-    })
-
+    
     let d = new Date();
     let currentDate = d.getFullYear().toString() + '-' + (d.getMonth() + 1).toString() + '-' + (d.getDate() + 1).toString()
 
@@ -114,9 +109,8 @@ const ReservationsPage = (props) => {
                 elementConfig: {
                     type: 'text',
                     placeholder: 'Comments...'
-                },validation: {
-                    required: false
                 },
+                validation:  false,
                 value: '',
                 touched: false
                 

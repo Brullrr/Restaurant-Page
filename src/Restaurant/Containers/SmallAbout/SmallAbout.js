@@ -7,7 +7,7 @@ const smallAbout = () => {
     return (
         <Fragment>
             <div className={classes.SmallAbout}>
-                <img className={classes.BackgroundImage} src={process.env.PUBLIC_URL + "/Images/Table.jpg"} />
+                <img className={classes.BackgroundImage} src={process.env.PUBLIC_URL + "/Images/Table.jpg"} alt='background'/>
                 <div className={classes.Overlay}>
                     <p className={classes.AboutUs}>About Us</p>
                     <p className={classes.Title}>The Best of East and West</p>

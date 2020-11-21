@@ -4,24 +4,36 @@ import classes from './HeaderButton.module.css'
 const headerButton = (props) => {
     
     let message = props.Label
-    let marginStyled
+    let theClassName; 
 
-    console.log("Header Button:   " + props.IsMobile)
+    
 
-
-    if(props.IsMobile) {
-        marginStyled = {marginTop: props.MarginTop}
-        
-    } else {
-        marginStyled = {marginTop: '0px'}
-    }
+    switch(props.ExtraClass) {
+        case '1' : {
+            theClassName = classes.HeaderButton1
+            break;
+        }
+        case '2' : {
+            theClassName = classes.HeaderButton2
+            break;
+        }
+        case '3' : {
+            theClassName = classes.HeaderButton3
+            break;
+        }
+        case '4' : {
+            theClassName = classes.HeaderButton4
+            break;
+        }
+        default : {
+            theClassName = classes.HeaderButton4
+        }
+    } 
 
 
     return (
         
-    <button className={classes.HeaderButton} style={
-        marginStyled
-    }>{message}</button>
+    <button className={theClassName} >{message}</button>
     )
 }
 

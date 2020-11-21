@@ -130,12 +130,13 @@
     }
     
     .SecondDivWords {
+        
         position: absolute;
         text-align: center;
         width: 290px;
         vertical-align: top;
         margin: 0px 0px 0px 0px;
-        right: 10%;
+         left: 30%;
     }
     .SecondDivTitle {
         font-size: 25px;
@@ -155,19 +156,19 @@
     }
     .ImageTwo {
         position: absolute;
-        left: 10%;
         height: 40px;
         width: 40px;
-        margin: 20px 0px 0px 0px;
+        margin: 20px 0% 0px 0%;
+        left: 10%;
     }
     
     .ThirdDivWords {
-        position: absolute;
+        position: initial;
         text-align: center;
         width: 290px;
         vertical-align: top;
-        margin: 0px 0px 0px 0px;
-        right: 10%;
+        margin: 0px 0px 0px 30%;
+        right: 0%;
     }
     .ThirdDivTitle {
         font-size: 25px;

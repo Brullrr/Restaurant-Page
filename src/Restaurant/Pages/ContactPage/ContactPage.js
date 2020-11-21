@@ -5,16 +5,12 @@ import classes from './ContactPage.module.css';
 
 
 const contactPage = (props) => {
-    const mql = window.matchMedia('(max-width: 880px)')
-    mql.addEventListener('change', (e) => {
-        const mobileView = e.matches;
-        props.Resize(mobileView)
-    })
+    
     
 
 
     return (<Fragment>
-        <Header IsMobile={props.IsMobile}/>
+        <Header />
         
         <div className={classes.ContactPage}>
             <div className={classes.ContactInformation}>

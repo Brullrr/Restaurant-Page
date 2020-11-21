@@ -6,3 +6,14 @@
     height: 100%;
     align-items: center;
 }
+
+@media ( max-width: 880px) { 
+    .Menus {
+        position: initial;
+        margin: 0px 0px 0px 0%;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        text-align: center;
+    }
+}

@@ -6,15 +6,11 @@ import classes from './DrinkPage.module.css';
 
 
 
- const drinkPage = (props) => {
-    const mql = window.matchMedia('(max-width: 880px)')
-    mql.addEventListener('change', (e) => {
-        const mobileView = e.matches;
-        props.Resize(mobileView)
-    })
+ const drinkPage = () => {
+    
      return (
          <Fragment>
-             <Header IsMobile={props.IsMobile} />
+             <Header  />
                 <p className={classes.Beverages}>&#8230;&#8230;&#8230;&#119977;&#8500;&#120003;-&#119964;&#120001;&#119992;&#8500;&#119997;&#8500;&#120001;&#119998;&#119992; &#8492;&#8495;&#120011;&#8495;&#120007;&#119990;&#8458;&#8495;&#120008;&#8230;&#8230;&#8230;</p>
 
                 <MenuItem 

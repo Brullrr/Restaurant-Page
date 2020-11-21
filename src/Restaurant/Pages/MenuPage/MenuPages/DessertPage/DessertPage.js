@@ -6,25 +6,21 @@ import classes from './DessertPage.module.css';
 
 
 
- const dessertPage = (props) => {
-    const mql = window.matchMedia('(max-width: 880px)')
-    mql.addEventListener('change', (e) => {
-        const mobileView = e.matches;
-        props.Resize(mobileView)
-    })
+ const dessertPage = () => {
+    
      return (
          <Fragment>
-             <Header IsMobile={props.IsMobile}/>
+             <Header />
                 <p className={classes.Desserts}>&#8230;&#8230;&#8230;&#8230;&#119967;&#8495;&#120008;&#120008;&#8495;&#120007;&#120009;&#120008;&#8230;&#8230;&#8230;&#8230;</p>
 
 
                 <MenuItem 
                     Image={process.env.PUBLIC_URL + '/Images/Brownie.jpg'}
                     MenuItemName='Oriental Brownie'
-                    Description='This brownie come topped with an explosion of hot chocoloate sauce that would rival the eruption of Mount Fuji. It is not all sweet hot chocolate. The brownie is centered around our ice cream created from home-grown vanilla beans.'
+                    Description='This brownie comes with an explosion of hot chocoloate sauce that would rival the eruption of Mount Fuji. It is not all sweet hot chocolate. The brownie is centered around home-made vanilla ice cream.'
                     Price='5.00'
                 />
-                <div class={classes.Divider}></div>
+                <div className={classes.Divider}></div>
                 <MenuItem 
                     Image={process.env.PUBLIC_URL + '/Images/CaramelDessert.jpg'}
                     MenuItemName='Caramel Cake'

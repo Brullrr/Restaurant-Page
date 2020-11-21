@@ -2,12 +2,8 @@ import classes from './ConfirmationPage.module.css';
 import React, { Fragment } from 'react';
 import Footer from '../../../Containers/Footer/Footer';
 
-const confirmationPage = (props) => {
-    const mql = window.matchMedia('(max-width: 880px)')
-    mql.addEventListener('change', (e) => {
-        const mobileView = e.matches;
-        props.Resize(mobileView)
-    })
+const confirmationPage = () => {
+    
     return (
         <Fragment> 
             <div className={classes.Confirmation}>

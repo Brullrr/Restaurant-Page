@@ -54,7 +54,7 @@
     background: #fff;
 } */
   
-.HeaderButton{
+.HeaderButton1{
       display:block;
       float:left;
       position:relative;
@@ -69,7 +69,7 @@
 }
 
 /* this controls left and right somehow */
-.HeaderButton::before {
+.HeaderButton1::before {
         transition: all 0.4s;  
         position:absolute;
         content:"";
@@ -85,7 +85,7 @@
         border-right: none;
 }
       /* this controls top and bottom somehow */
-.HeaderButton::after{
+.HeaderButton1::after{
         transition: all 0.4s;  
         position:absolute;
         content:"";
@@ -100,24 +100,224 @@
         border-top: none;
 }
       
-.HeaderButton:hover{
+.HeaderButton1:hover{
     cursor: pointer;
     color:rgb(104, 20, 121);
     transition: 0.2s;
     }   
         
-.HeaderButton:hover:after{
+.HeaderButton1:hover:after{
     width:124px;
     margin-left:-50%;
     border-color:rgb(104, 20, 121);
 }
         
-.HeaderButton:hover:before{
+.HeaderButton1:hover:before{
     height:100px;
     top:0%;
     border-color:rgb(104, 20, 121);
 }
 
+
+
+.HeaderButton2{
+      display:block;
+      float:left;
+      position:relative;
+      width:118px;
+      height:100px;
+      text-align:center;
+      border: none;
+      background-color: white;
+      font-weight: 900;
+      outline: none;
+      
+}
+
+/* this controls left and right somehow */
+.HeaderButton2::before {
+        transition: all 0.4s;  
+        position:absolute;
+        content:"";
+        width:99%;
+        height:0%;
+        left:50%;
+        margin-left:-50%;
+        top:50%;
+        border-color:rgb(104, 20, 121);
+        border-style:solid;
+        border-width:0 1px;
+        border-left: none;
+        border-right: none;
+}
+      /* this controls top and bottom somehow */
+.HeaderButton2::after{
+        transition: all 0.4s;  
+        position:absolute;
+        content:"";
+        width: 0px;
+        height:100%;
+        left:50%;
+        margin-left: 0%;
+        top: 0%;
+        border-color:rgb(104, 20, 121);
+        border-style:solid;
+        border-width:2px 0;
+        border-top: none;
+}
+      
+.HeaderButton2:hover{
+    cursor: pointer;
+    color:rgb(104, 20, 121);
+    transition: 0.2s;
+    }   
+        
+.HeaderButton2:hover:after{
+    width:124px;
+    margin-left:-50%;
+    border-color:rgb(104, 20, 121);
+}
+        
+.HeaderButton2:hover:before{
+    height:100px;
+    top:0%;
+    border-color:rgb(104, 20, 121);
+}
+
+
+
+
+
+
+.HeaderButton3{
+    display:block;
+    float:left;
+    position:relative;
+    width:118px;
+    height:100px;
+    text-align:center;
+    border: none;
+    background-color: white;
+    font-weight: 900;
+    outline: none;
+    
+}
+
+/* this controls left and right somehow */
+.HeaderButton3::before {
+      transition: all 0.4s;  
+      position:absolute;
+      content:"";
+      width:99%;
+      height:0%;
+      left:50%;
+      margin-left:-50%;
+      top:50%;
+      border-color:rgb(104, 20, 121);
+      border-style:solid;
+      border-width:0 1px;
+      border-left: none;
+      border-right: none;
+}
+    /* this controls top and bottom somehow */
+.HeaderButton3::after{
+      transition: all 0.4s;  
+      position:absolute;
+      content:"";
+      width: 0px;
+      height:100%;
+      left:50%;
+      margin-left: 0%;
+      top: 0%;
+      border-color:rgb(104, 20, 121);
+      border-style:solid;
+      border-width:2px 0;
+      border-top: none;
+}
+    
+.HeaderButton3:hover{
+  cursor: pointer;
+  color:rgb(104, 20, 121);
+  transition: 0.2s;
+  }   
+      
+.HeaderButton3:hover:after{
+  width:124px;
+  margin-left:-50%;
+  border-color:rgb(104, 20, 121);
+}
+      
+.HeaderButton3:hover:before{
+  height:100px;
+  top:0%;
+  border-color:rgb(104, 20, 121);
+}
+
+
+
+.HeaderButton4{
+    display:block;
+    float:left;
+    position:relative;
+    width:118px;
+    height:100px;
+    text-align:center;
+    border: none;
+    background-color: white;
+    font-weight: 900;
+    outline: none;
+    
+}
+
+/* this controls left and right somehow */
+.HeaderButton4::before {
+      transition: all 0.4s;  
+      position:absolute;
+      content:"";
+      width:99%;
+      height:0%;
+      left:50%;
+      margin-left:-50%;
+      top:50%;
+      border-color:rgb(104, 20, 121);
+      border-style:solid;
+      border-width:0 1px;
+      border-left: none;
+      border-right: none;
+}
+    /* this controls top and bottom somehow */
+.HeaderButton4::after{
+      transition: all 0.4s;  
+      position:absolute;
+      content:"";
+      width: 0px;
+      height:100%;
+      left:50%;
+      margin-left: 0%;
+      top: 0%;
+      border-color:rgb(104, 20, 121);
+      border-style:solid;
+      border-width:2px 0;
+      border-top: none;
+}
+    
+.HeaderButton4:hover{
+  cursor: pointer;
+  color:rgb(104, 20, 121);
+  transition: 0.2s;
+  }   
+      
+.HeaderButton4:hover:after{
+  width:124px;
+  margin-left:-50%;
+  border-color:rgb(104, 20, 121);
+}
+      
+.HeaderButton4:hover:before{
+  height:100px;
+  top:0%;
+  border-color:rgb(104, 20, 121);
+}
 
 
 
@@ -129,7 +329,7 @@
 
 @media ( max-width: 880px) {
 
-    .HeaderButton{
+    .HeaderButton1{
         display: initial;
         position: absolute;
         float: none;
@@ -140,13 +340,14 @@
         background-color: white;
         font-weight: 100;
         outline: none;
-        right: 5%;
+        right: 1%;
         font-size: 14px;
+        margin-top: 0px;
         
   }
   
   /* this controls left and right somehow */
-  .HeaderButton::before {
+  .HeaderButton1::before {
           transition: none;  
           position: absolute;
           content:"";
@@ -163,7 +364,7 @@
           outline: none;
   }
         /* this controls top and bottom somehow */
-  .HeaderButton::after{
+  .HeaderButton1::after{
             transition: none;  
             position: absolute;
             content:"";
@@ -180,22 +381,263 @@
             outline: none;
   }
         
-  .HeaderButton:hover{
+  .HeaderButton1:hover{
       cursor: pointer;
       color: black;
       transition: 0.2s;
       }   
           
-  .HeaderButton:hover:after{
+  .HeaderButton1:hover:after{
       width: 100px;
       margin-left: 0%;
       border-color: black;
   }
           
-  .HeaderButton:hover:before{
+  .HeaderButton1:hover:before{
       height:20px;
       top: 0%;
       border-color:black;
   }
+
+
+
+
+
+
+
+
+
+
+  .HeaderButton2{
+    display: initial;
+    position: absolute;
+    float: none;
+    width:100px;
+    height:20px;
+    text-align:center;
+    border: none;
+    background-color: white;
+    font-weight: 100;
+    outline: none;
+    right: 1%;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+/* this controls left and right somehow */
+.HeaderButton2::before {
+      transition: none;  
+      position: absolute;
+      content:"";
+      width: 100px;
+      height: 20px;
+      left: 0%;
+      margin-left: 0%;
+      top: 0%;
+      border-color:white;
+      border-style: solid;
+      border-width: 1px;
+      border-left: none;
+      border-right: none;
+      outline: none;
+}
+    /* this controls top and bottom somehow */
+.HeaderButton2::after{
+        transition: none;  
+        position: absolute;
+        content:"";
+        width: 100px;
+        height: 20px;
+        left: 0%;
+        margin-left: 0%;
+        top: 0%;
+        border-color:purple;
+        border-style: solid;
+        border-width: 1px;
+        border-left: none;
+        border-right: none;
+        outline: none;
+}
+    
+.HeaderButton2:hover{
+  cursor: pointer;
+  color: black;
+  transition: 0.2s;
+  }   
+      
+.HeaderButton2:hover:after{
+  width: 100px;
+  margin-left: 0%;
+  border-color: black;
+}
+      
+.HeaderButton2:hover:before{
+  height:20px;
+  top: 0%;
+  border-color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.HeaderButton3{
+    display: initial;
+    position: absolute;
+    float: none;
+    width:100px;
+    height:20px;
+    text-align:center;
+    border: none;
+    background-color: white;
+    font-weight: 100;
+    outline: none;
+    right: 1%;
+    font-size: 14px;
+    margin-top: 60px;
+    
+}
+
+/* this controls left and right somehow */
+.HeaderButton3::before {
+      transition: none;  
+      position: absolute;
+      content:"";
+      width: 100px;
+      height: 20px;
+      left: 0%;
+      margin-left: 0%;
+      top: 0%;
+      border-color:white;
+      border-style: solid;
+      border-width: 1px;
+      border-left: none;
+      border-right: none;
+      outline: none;
+}
+    /* this controls top and bottom somehow */
+.HeaderButton3::after{
+        transition: none;  
+        position: absolute;
+        content:"";
+        width: 100px;
+        height: 20px;
+        left: 0%;
+        margin-left: 0%;
+        top: 0%;
+        border-color:purple;
+        border-style: solid;
+        border-width: 1px;
+        border-left: none;
+        border-right: none;
+        outline: none;
+}
+    
+.HeaderButton3:hover{
+  cursor: pointer;
+  color: black;
+  transition: 0.2s;
+  }   
+      
+.HeaderButton3:hover:after{
+  width: 100px;
+  margin-left: 0%;
+  border-color: black;
+}
+      
+.HeaderButton3:hover:before{
+  height:20px;
+  top: 0%;
+  border-color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+.HeaderButton4{
+    display: initial;
+    position: absolute;
+    float: none;
+    width:100px;
+    height:20px;
+    text-align:center;
+    border: none;
+    background-color: white;
+    font-weight: 100;
+    outline: none;
+    right: 1%;
+    font-size: 14px;
+    margin-top: 90px;
+    
+}
+
+/* this controls left and right somehow */
+.HeaderButton4::before {
+      transition: none;  
+      position: absolute;
+      content:"";
+      width: 100px;
+      height: 20px;
+      left: 0%;
+      margin-left: 0%;
+      top: 0%;
+      border-color:white;
+      border-style: solid;
+      border-width: 1px;
+      border-left: none;
+      border-right: none;
+      outline: none;
+}
+    /* this controls top and bottom somehow */
+.HeaderButton4::after{
+        transition: none;  
+        position: absolute;
+        content:"";
+        width: 100px;
+        height: 20px;
+        left: 0%;
+        margin-left: 0%;
+        top: 0%;
+        border-color:purple;
+        border-style: solid;
+        border-width: 1px;
+        border-left: none;
+        border-right: none;
+        outline: none;
+}
+    
+.HeaderButton4:hover{
+  cursor: pointer;
+  color: black;
+  transition: 0.2s;
+  }   
+      
+.HeaderButton4:hover:after{
+  width: 100px;
+  margin-left: 0%;
+  border-color: black;
+}
+      
+.HeaderButton4:hover:before{
+  height:20px;
+  top: 0%;
+  border-color:black;
+}
 
 }
