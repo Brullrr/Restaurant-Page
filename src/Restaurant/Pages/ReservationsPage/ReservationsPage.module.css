@@ -136,18 +136,18 @@
         font-size: 5vh;
         margin: 0px 0px 0px 0px;
         color: ivory;
-        width: 40%;
-        min-width: 360px;
-        right: 0%;
-        top: 38%;
+        width: 80%;
+        min-width: 0px;
+        right: 10%;
+        top: 30%;
         align-items: center;
         text-align: center;
     }
     .InputForm {
         position: absolute;
-        width: 40%;
-        min-width: 360px;
-        right: 0%;
+        width: 90%;
+        min-width: 0px;
+        right: 5%;
         top: 45%;
         align-items: center;
         text-align: center;

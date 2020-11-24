@@ -100,15 +100,17 @@
     
     .FirstDivWords {
         display: inline-block;
-        font-size: 50px; 
-        top: 40%;
+        font-size: 20vh;  
+        top: 0%;
         padding: 10px;
+        margin: -20px 0px 0px 0px;
     }
     .FirstDivWordsTwo {
         display: inline-block;
-        font-size: 50px; 
-        top: 40%;
+        font-size: 20vh;  
+        top: 0%;
         padding: 10px;
+        margin: -20px 0px 0px 0px;
     }
     
     .Divider {
@@ -133,7 +135,7 @@
         
         position: absolute;
         text-align: center;
-        width: 290px;
+        width: 400px;
         vertical-align: top;
         margin: 0px 0px 0px 0px;
          left: 30%;
@@ -151,6 +153,7 @@
         display: flex;
         height: 50vh;
         width: 100%;
+       
         min-height: 200px;
         background-color: rgb(250, 185, 221);
     }
@@ -165,7 +168,7 @@
     .ThirdDivWords {
         position: initial;
         text-align: center;
-        width: 290px;
+        width: 400px;
         vertical-align: top;
         margin: 0px 0px 0px 30%;
         right: 0%;
@@ -182,6 +185,28 @@
 }
 
 @media ( max-width: 400px) { 
+        
+    .FirstDiv {
+        margin-top: 20px;
+        height: 20vh;
+        background-color: rgb(250, 225, 221);
+        text-align: center;
+        
+    }
+    .FirstDivWords {
+        display: inline-block;
+        font-size: 7vh; 
+        top: 40%;
+        padding: 10px;
+        margin: 0px 0px 0px 0px;
+    }
+    .FirstDivWordsTwo {
+        display: inline-block;
+        font-size: 7vh; 
+        top: 40%;
+        padding: 10px;
+        margin: 0px 0px 0px 0px;
+    }
 
     .SecondDivWords {
         

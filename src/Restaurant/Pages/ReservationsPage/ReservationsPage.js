@@ -138,7 +138,6 @@ const ReservationsPage = (props) => {
     
     const checkValidity = (value, rules) => {
         let isValid = true;
-        console.log(value)
         if(rules.required) {
             isValid = value.trim() !== '' && isValid;
         }
@@ -193,13 +192,13 @@ const ReservationsPage = (props) => {
         for(let inputIdentifier in updatedOrderForm) {
             formIsValid = updatedOrderForm[inputIdentifier].valid && formIsValid;
         }
-
+        console.log("[ReservationsPage]  Is the form valid beforehand?    " + orderFormState.formIsValid)
         useOrderFormState({
             orderForm : updatedOrderForm,
             formIsValid: formIsValid
         })
     }
-    console.log(orderFormState.formIsValid)
+    console.log("[ReservationsPage]  Is the form valid?    " + orderFormState.formIsValid)
 
     return (<Fragment>
         <Header IsMobile={props.IsMobile}/>

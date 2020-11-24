@@ -116,3 +116,70 @@
     top:0%;
     border-color:rgb(104, 20, 121);
 }
+
+@media ( max-width: 500px) { 
+
+    .FooterButton{
+        display:block;
+        float:left;
+        position:relative;
+        width: 90px;
+        height:100px;
+        text-align:center;
+        border: none;
+        background-color: white;
+        font-weight: 900;
+        line-height: 100px;
+        left: 0%;
+        margin: 30px 0px 0px 0px;
+        outline: none;
+        font-size: 10px;
+  }
+  
+  /* this controls left and right somehow */
+  .FooterButton::before {
+          transition: all 0.4s;  
+          position:absolute;
+          content:"";
+          width: 99%;
+          height:0%;
+          top:50%;
+          border-color:rgb(104, 20, 121);
+          border-style:solid;
+          border-width:0 1px;
+          border-left: none;
+          border-right: none;
+  }
+        /* this controls top and bottom somehow */
+  .FooterButton::after{
+          transition: all 0.4s;  
+          position:absolute;
+          content:"";
+          width: 0px;
+          height:100%;
+          left: 50%;
+          top: 0%;
+          border-color:rgb(104, 20, 121);
+          border-style:solid;
+          border-width:2px 0;
+          border-bottom: none;
+  }
+        
+  .FooterButton:hover{
+      cursor: pointer;
+      color:rgb(104, 20, 121);
+      transition: 0.2s;
+      }   
+          
+  .FooterButton:hover:after{
+      width:124px;
+      margin-left:-50%;
+      border-color:rgb(104, 20, 121);
+  }
+          
+  .FooterButton:hover:before{
+      height:100px;
+      top:0%;
+      border-color:rgb(104, 20, 121);
+  }
+}

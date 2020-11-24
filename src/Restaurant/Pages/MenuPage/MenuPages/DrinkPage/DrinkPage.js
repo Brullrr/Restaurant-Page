@@ -11,7 +11,7 @@ import classes from './DrinkPage.module.css';
      return (
          <Fragment>
              <Header  />
-                <p className={classes.Beverages}>&#8230;&#8230;&#8230;&#119977;&#8500;&#120003;-&#119964;&#120001;&#119992;&#8500;&#119997;&#8500;&#120001;&#119998;&#119992; &#8492;&#8495;&#120011;&#8495;&#120007;&#119990;&#8458;&#8495;&#120008;&#8230;&#8230;&#8230;</p>
+                <p className={classes.Beverages}>&#8230;&#8230;&#119977;&#8500;&#120003;-&#119964;&#120001;&#119992;&#8500;&#119997;&#8500;&#120001;&#119998;&#119992; &#8492;&#8495;&#120011;&#8495;&#120007;&#119990;&#8458;&#8495;&#120008;&#8230;&#8230;</p>
 
                 <MenuItem 
                     Image={process.env.PUBLIC_URL + '/Images/Juice.jpg'}
@@ -22,7 +22,7 @@ import classes from './DrinkPage.module.css';
 
                 
 
-                <p className={classes.Beverages}>&#8230;&#8230;&#8230;&#8230;&#119964;&#120001;&#119992;&#8500;&#119997;&#8500;&#120001;&#119998;&#119992; &#8492;&#8495;&#120011;&#8495;&#120007;&#119990;&#8458;&#8495;&#120008;&#8230;&#8230;&#8230;&#8230;</p>
+                <p className={classes.Beverages}>&#8230;&#8230;&#119964;&#120001;&#119992;&#8500;&#119997;&#8500;&#120001;&#119998;&#119992; &#8492;&#8495;&#120011;&#8495;&#120007;&#119990;&#8458;&#8495;&#120008;&#8230;&#8230;</p>
                 
 
                 <MenuItem 
@@ -31,14 +31,14 @@ import classes from './DrinkPage.module.css';
                     Description='Think of a flavor. Our martini specialists can prepare you a martini with that flavor as a base. Just let us know. '
                     Price='7.00'
                 />
-                <div class={classes.Divider}></div>
+                <div className={classes.Divider}></div>
                 <MenuItem 
                     Image={process.env.PUBLIC_URL + '/Images/LimeDrink.jpg'}
                     MenuItemName='Lime Sawa'
                     Description='An alcohol Lime Sawa. A popular drink in Asia. Extremely popular among young women.'
                     Price='3.50'
                 />
-                <div class={classes.Divider}></div>
+                <div className={classes.Divider}></div>
 
 
              <Footer />

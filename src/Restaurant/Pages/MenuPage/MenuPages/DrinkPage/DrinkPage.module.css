@@ -10,11 +10,11 @@
     border-bottom: 2px dotted black;
 }
 
-@media ( max-width: 1100px) {
+@media ( max-width: 500px) {
     .Beverages {
         text-align: center;
         align-items: center;
-        font-size: 4vh;
+        font-size: 3vh;
     }
     
 }
